@@ -1,0 +1,14 @@
+body {
+    direction: rtl;
+    text-align: right;
+}
+
+.navbar {
+    float: right;
+}
+
+.sidebar {
+    float: left;
+}
+
+/* Add more rules as needed */

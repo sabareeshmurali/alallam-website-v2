@@ -88,8 +88,15 @@ Route::post('admin/images/insert', [SettingsController::class, 'imagesInsert']);
 
 // .... THEME PAGES............
 
-
 Route::get('/', [SettingsController::class, 'showHome'])->name('home');
 
+Route::get('theme/about-us', [SettingsController::class, 'showAboutUs'])->name('aboutUs');
+
+Route::get('theme/contact', [SettingsController::class, 'showContact'])->name('contact');
 
 Route::post('/image/general/upload', [SettingsController::class, 'generalImageUpload']);
+
+
+//............ RTL THEME PAGES...................
+
+Route::get('themertl/home', [SettingsController::class, 'showHome'])->name('home');

@@ -23,14 +23,16 @@ class SettingsController extends Controller
   }
 
 
-public function showAbout()
+public function showAboutUs()
 {
  
   $model = new general_mod();
 
-  $contents = Content::where('contents_page', 'about')->get()->keyBy('contents_key');
+  $contents = Content::whereIn('content_page', ['about-us','header','footer'])->get()->keyBy('content_key');
+
+  $images = Images::whereIn('img_page', ['about-us', 'default'])->get()->keyBy('img_key');
     
-    return view('theme.about', compact('contents'));
+    return view('theme.about-us', compact('contents','images'));
 }
 
 public function showContact()
@@ -38,9 +40,11 @@ public function showContact()
  
   $model = new general_mod();
 
-  $contents = Content::where('contents_page', 'contact')->get()->keyBy('contents_key');
-    
-    return view('theme.contact', compact('contents'));
+  $contents = Content::whereIn('content_page', ['contact','header','footer'])->get()->keyBy('content_key');
+
+  $images = Images::whereIn('img_page', ['contact', 'default'])->get()->keyBy('img_key');
+
+  return view('theme.contact', compact('contents','images'));
 }
 
 public function showHome()
@@ -109,9 +113,9 @@ public function generalImageUpload(Request $request)
 
     $fileName = time().".".$img->extension();
 
-    if($request->file_details->move(public_path('asset/img'), $fileName))
+    if($request->file_details->move(public_path('assets/uploads'), $fileName))
     {
-        $data=array('path' => '/public/assets/img/'.$fileName, 'resp'=>'success');
+        $data=array('path' => '/public/assets/uploads/'.$fileName, 'resp'=>'success');
     }
     else{
         $data=array('resp'=>'failed');

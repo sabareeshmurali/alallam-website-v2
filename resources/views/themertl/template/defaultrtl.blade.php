@@ -5,7 +5,7 @@ use Symfony\Component\HttpFoundation\Session\Session;
 $session = new Session();
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 
 <head>
     <!-- ========== Meta Tags ========== -->
@@ -13,6 +13,7 @@ $session = new Session();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Cleanu - Cleaning Services Template">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap-rtl.min.css" rel="stylesheet">
 
     <!-- ========== Page Title ========== -->
     <title>Cleanu - Cleaning Services Template</title>
@@ -35,6 +36,8 @@ $session = new Session();
 	<link href="{{ asset('public/assets/css/bootsnav.css')}}" rel="stylesheet">
 	<link href="{{ asset('public/style.css')}}" rel="stylesheet">
 	<link href="{{ asset('public/assets/css/responsive.css')}}" rel="stylesheet">
+    <link href="{{ asset('public/assets/css/bootstrap.rtl.min.css')}}" rel="stylesheet">
+    <link href="{{ asset('public/assets/css/bootstrap.rtl.css')}}" rel="stylesheet">
     <!-- ========== End Stylesheet ========== -->
 
 </head>
