@@ -109,3 +109,7 @@ Route::get('themertl/home', [ThemesSettingsController::class, 'showRTLHome'])->n
 Route::get('themertl/about-us', [ThemesSettingsController::class, 'showRTLAboutUs'])->name('aboutUs');
 
 Route::get('themertl/contact', [ThemesSettingsController::class, 'showRTLContact'])->name('contact');
+
+Route::get('themertl/faq', [ThemesSettingsController::class, 'showRTLFaq'])->name('faq');
+
+Route::get('themertl/pricing', [ThemesSettingsController::class, 'showRTLPricing'])->name('pricing');

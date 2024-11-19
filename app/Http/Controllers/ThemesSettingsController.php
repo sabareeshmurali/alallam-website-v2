@@ -111,4 +111,29 @@ public function showRTLContact()
   return view('themertl.contact', compact('contents','images'));
 }
 
+public function showRTLFaq()
+{
+ 
+  $model = new general_mod();
+
+  $contents = Content::whereIn('content_page', ['faq','header','footer'])->get()->keyBy('content_key');
+
+  $images = Images::whereIn('img_page', ['faq', 'default'])->get()->keyBy('img_key');
+
+  return view('themertl.faq', compact('contents','images'));
+}
+
+public function showRTLPricing()
+{
+ 
+  $model = new general_mod();
+
+  $contents = Content::whereIn('content_page', ['pricing','header','footer'])->get()->keyBy('content_key');
+
+  $images = Images::whereIn('img_page', ['pricing', 'default'])->get()->keyBy('img_key');
+
+  return view('themertl.pricing', compact('contents','images'));
+}
+
+
 }
