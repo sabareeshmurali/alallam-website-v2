@@ -1,0 +1,115 @@
+
+
+/* style-rtl.css */
+
+/* General */
+body {
+    direction: rtl;
+    text-align: right;
+}
+
+/* Navigation */
+
+/* Ensure navbar items align correctly in RTL */
+.navbar {
+    direction: rtl;
+    text-align: right;
+}
+
+.navbar-nav {
+    float: right;
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+/* Reverse dropdown icon direction if needed */
+.dropdown-menu {
+    text-align: right;
+}
+
+
+.navbar-default .navbar-nav > ul > li > a {
+    float: right;
+}
+
+.navbar-default .navbar-toggle {
+    float: right;
+}
+
+.navbar-default .navbar-nav > .dropdown > a:after {
+    content: "\f104"; 
+    margin-left: 8px;
+    margin-right: 0;
+    float: left;
+}
+
+.navbar-default .dropdown-menu {
+    text-align: right;
+    right: 0;
+    left: auto;
+}
+
+/* Footer */
+.footer-bottom .footer-bottom-box {
+    text-align: right;
+}
+
+.footer-bottom .footer-bottom-box .link ul li {
+    float: right;
+    margin-right: 0;
+    margin-left: 15px;
+}
+
+.footer-bottom .footer-bottom-box .link ul li a {
+    text-align: right;
+}
+
+/* Forms */
+form input, form button {
+    text-align: right;
+    float: right;
+}
+
+/* Owl Carousel */
+.owl-carousel .owl-nav [class*='owl-'] {
+    transform: scaleX(-1);
+}
+
+/* Custom Styles */
+.icon, .info {
+    float: right;
+}
+
+.call .info {
+    text-align: right;
+}
+
+/* Fixed Shape */
+.fixed-shape-left {
+    right: 0;
+    left: auto;
+}
+
+.f-item ul li {
+    list-style: none;
+    margin: 5px 0;
+}
+
+.f-item ul li::before {
+    content: "\f105"; 
+    font-family: FontAwesome;
+    margin-right: 10px;
+}
+
+
+.social ul li {
+    float: right;
+    margin-right: 10px;
+    margin-left: 0;
+}
+
+.hero-section .content {
+    text-align: right;
+}

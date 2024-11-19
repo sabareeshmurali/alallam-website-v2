@@ -13,8 +13,8 @@ $session = new Session();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Cleanu - Cleaning Services Template">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap-rtl.min.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.0.0/css/bootstrap.min.css" integrity="sha384-P4uhUIGk/q1gaD/NdgkBIl3a6QywJjlsFJFk7SPRdruoGddvRVSwv5qFnvZ73cpz" crossorigin="anonymous">
+ 
     <!-- ========== Page Title ========== -->
     <title>Cleanu - Cleaning Services Template</title>
 
@@ -22,7 +22,7 @@ $session = new Session();
     <link rel="shortcut icon" href="{{ asset('public/assets/img/favicon.png')}}" type="image/x-icon">
 
     <!-- ========== Start Stylesheet ========== -->
-    <link href="{{ asset('public/assets/css/bootstrap.min.css')}}" rel="stylesheet">
+  
 	<link href="{{ asset('public/assets/css/font-awesome.min.css')}}" rel="stylesheet">
 	<link href="{{ asset('public/assets/css/themify-icons.css')}}" rel="stylesheet">
 	<link href="{{ asset('public/assets/css/elegant-icons.css')}}" rel="stylesheet">
@@ -34,10 +34,9 @@ $session = new Session();
 
 	<link href="{{ asset('public/assets/css/animate.css')}}" rel="stylesheet">
 	<link href="{{ asset('public/assets/css/bootsnav.css')}}" rel="stylesheet">
-	<link href="{{ asset('public/style.css')}}" rel="stylesheet">
+    <link href="{{ asset('public/style.css')}}" rel="stylesheet">
+	<link href="{{ asset('public/style-rtl.css')}}" rel="stylesheet">
 	<link href="{{ asset('public/assets/css/responsive.css')}}" rel="stylesheet">
-    <link href="{{ asset('public/assets/css/bootstrap.rtl.min.css')}}" rel="stylesheet">
-    <link href="{{ asset('public/assets/css/bootstrap.rtl.css')}}" rel="stylesheet">
     <!-- ========== End Stylesheet ========== -->
 
 </head>
@@ -85,7 +84,7 @@ $session = new Session();
     <header id="home">
 
         <!-- Start Navigation -->
-        <nav class="navbar navbar-default navbar-sticky nav-full-width dark bootsnav">
+        <nav dir="rtl" class="navbar navbar-default navbar-sticky nav-full-width dark bootsnav">
 
             <div class="container-fill">
 
@@ -213,7 +212,7 @@ $session = new Session();
 
     <!-- Start Footer 
     ============================================= -->
-    <footer class="bg-theme text-light">
+    <footer  class="bg-theme text-light">
         <!-- illustration -->
         <div class="animate-illustration">
             <img src=" {{ asset($images['2']->img_path ?? '') }} " alt="illustration">
@@ -343,7 +342,7 @@ $session = new Session();
   <script  type="text/javascript" src="{{ asset('public/assets/js/jquery.twentytwenty.js')}}" ></script>
   <script type="text/javascript" src="{{ asset('public/assets/js/bootsnav.js')}}"></script>
   <script type="text/javascript" src="{{ asset('public/assets/js/main.js')}}" ></script>
-
+  <script src="https://cdn.rtlcss.com/bootstrap/v4.0.0/js/bootstrap.min.js" integrity="sha384-54+cucJ4QbVb99v8dcttx/0JRx4FHMmhOWi4W+xrXpKcsKQodCBwAvu3xxkZAwsH" crossorigin="anonymous"></script>
 
 </body>
 </html>

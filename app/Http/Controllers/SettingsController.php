@@ -11,7 +11,6 @@ use Illuminate\Support\Facades\Storage;
 class SettingsController extends Controller
 {
 
-// Method to show Contents - Test 
   public function contentsShow()
   {
       $info = json_decode(file_get_contents('php://input'))->Search;
@@ -21,43 +20,6 @@ class SettingsController extends Controller
       
       echo json_encode($result);
   }
-
-
-public function showAboutUs()
-{
- 
-  $model = new general_mod();
-
-  $contents = Content::whereIn('content_page', ['about-us','header','footer'])->get()->keyBy('content_key');
-
-  $images = Images::whereIn('img_page', ['about-us', 'default'])->get()->keyBy('img_key');
-    
-    return view('theme.about-us', compact('contents','images'));
-}
-
-public function showContact()
-{
- 
-  $model = new general_mod();
-
-  $contents = Content::whereIn('content_page', ['contact','header','footer'])->get()->keyBy('content_key');
-
-  $images = Images::whereIn('img_page', ['contact', 'default'])->get()->keyBy('img_key');
-
-  return view('theme.contact', compact('contents','images'));
-}
-
-public function showHome()
-{
- 
-  $model = new general_mod();
-
-  $contents = Content::whereIn('content_page', ['home','header','footer'])->get()->keyBy('content_key');
-
-  $images = Images::whereIn('img_page', ['home', 'default'])->get()->keyBy('img_key');
-
-  return view('theme.home', compact('contents','images'));
-}
 
   public function contentsInsert()
   {
@@ -76,8 +38,6 @@ public function showHome()
           echo ($model->update_general('in_contents', $refData, $upData) > 0) ? json_encode(array('statuscode' => 200, 'message' => 'Contents Edit Success')) : json_encode(array('statuscode' => 500, 'message' => 'Contents Edit Failed'));
       }
   }
-
-
 
 public function loadHomePage()
 {
@@ -105,7 +65,6 @@ public function uploadImage()
         echo ($model->update_general('file_upload', $refData, $upData) > 0) ? json_encode(array('statuscode' => 200, 'message' => 'Image Edit Success')) : json_encode(array('statuscode' => 500, 'message' => 'Image Edit Failed'));
     }
 }
-
 
 public function generalImageUpload(Request $request)
 {
@@ -147,27 +106,6 @@ public function imagesInsert()
 }
 
 
-
-
-
-// public function imagesInsert()
-// {
-//     // $model = new general_mod();
-//     // $info = json_decode(file_get_contents('php://input'))->mainData;
-//     // if ($info->btnName == 'Insert') {
-//     //     $insData = json_decode(json_encode($info), true);
-//     //     $insData = array_diff_key($insData, array_flip(["btnName"]));
-//     //     $resp = $model->insert_with_idreturn('in_images', $insData);
-//     //     echo ($resp > 0) ? json_encode(array('statuscode' => 200, 'message' => 'Images added Success')) : json_encode(array('statuscode' => 500, 'message' => 'Images added Failed'));
-//     // } else {
-//     //     $upData = json_decode(json_encode($info), true);
-//     //     $upData = array_diff_key($upData, array_flip(["btnName", "img_id"]));
-//     //     print_r($upData);
-//     //     $refData = array('img_id' => $info->img_id);
-//     //     echo ($model->update_general('in_images', $refData, $upData) > 0) ? json_encode(array('statuscode' => 200, 'message' => 'Images Change Success')) : json_encode(array('statuscode' => 500, 'message' => 'Image change Failed'));
-//     // }
-// }
-
 public function imagesShow()
 {
     $info = json_decode(file_get_contents('php://input'))->Search;
@@ -176,7 +114,6 @@ public function imagesShow()
     // print_r($result);
     echo json_encode($result);
 }
-
 
 
 }

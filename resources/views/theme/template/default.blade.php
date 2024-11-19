@@ -33,6 +33,7 @@ $session = new Session();
 
 	<link href="{{ asset('public/assets/css/animate.css')}}" rel="stylesheet">
 	<link href="{{ asset('public/assets/css/bootsnav.css')}}" rel="stylesheet">
+    
 	<link href="{{ asset('public/style.css')}}" rel="stylesheet">
 	<link href="{{ asset('public/assets/css/responsive.css')}}" rel="stylesheet">
     <!-- ========== End Stylesheet ========== -->

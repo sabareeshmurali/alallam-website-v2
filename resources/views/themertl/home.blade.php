@@ -6,7 +6,7 @@ use Symfony\Component\HttpFoundation\Session\Session; ?>
 
     <!-- Start Banner 
     ============================================= -->
-    <div class="banner-area bg-cover shadow theme-hard text-light text-multi-weight" style="background-image: url('{{ asset($images['2440']->img_path ?? '') }}');">
+    <div dir="rtl" class="banner-area bg-cover shadow theme-hard text-light text-multi-weight" style="background-image: url('{{ asset($images['2440']->img_path ?? '') }}');">
         
         <div class="banner-items">
             <div class="box-table">
@@ -91,7 +91,7 @@ use Symfony\Component\HttpFoundation\Session\Session; ?>
 
     <!-- Star Services
     ============================================= -->
-    <div class="services-style-three-area relative text-center default-padding">
+    <div dir="rtl" class="services-style-three-area relative text-center default-padding">
         <div class="container">
             <div class="row">
                 <!-- Signle Item -->
@@ -144,7 +144,7 @@ use Symfony\Component\HttpFoundation\Session\Session; ?>
 
     <!-- Start About
     ============================================= -->
-    <div class="about-style-two-area bg-gray default-padding">
+    <div dir="rtl" class="about-style-two-area bg-gray default-padding">
         <div class="container">
             <div class="row align-center">
                 <div class="col-lg-6 about-style-two">
@@ -171,7 +171,7 @@ use Symfony\Component\HttpFoundation\Session\Session; ?>
 
     <!-- Start Team 
     ============================================= -->
-    <div class="team-area default-padding bottom-less">
+    <div dir="rtl"  class="team-area default-padding bottom-less">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
@@ -280,7 +280,7 @@ use Symfony\Component\HttpFoundation\Session\Session; ?>
 
     <!-- Start Fa   
     ============================================= -->
-    <div class="faq-area default-padding bg-cover" style="background-image: url('{{ asset($images['1578']->img_path ?? '') }}');">
+    <div dir="rtl" class="faq-area default-padding bg-cover" style="background-image: url('{{ asset($images['1578']->img_path ?? '') }}');">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
@@ -354,7 +354,7 @@ use Symfony\Component\HttpFoundation\Session\Session; ?>
 
     <!-- Start Pricing Area 
     ============================================= -->
-    <div class="pricing-area shadow default-padding-top bottom-less">
+    <div dir="rtl" class="pricing-area shadow default-padding-top bottom-less">
         <!-- Fixed Shape -->
         <div class="fixed-sahpe-bottom">
             <img src=" {{ asset($images['19']->img_path ?? '') }} " alt="Shape">
@@ -432,7 +432,7 @@ use Symfony\Component\HttpFoundation\Session\Session; ?>
 
     <!-- Start Project Area
     ============================================= -->
-    <div class="project-area overflow-hidden default-padding">
+    <div dir="rtl" class="project-area overflow-hidden default-padding">
         <div class="container">
             <div class="heading-left">
             {!! $contents['project']->content_english ?? '' !!}
@@ -511,7 +511,7 @@ use Symfony\Component\HttpFoundation\Session\Session; ?>
 
     <!-- Start Contact Area 
     ============================================= -->
-    <div id="contact" class="contact-area bg-theme text-light default-padding">
+    <div dir="rtl" id="contact" class="contact-area bg-theme text-light default-padding">
         <div class="container">
             <div class="contact-content">
                 <div class="row">
@@ -578,7 +578,7 @@ use Symfony\Component\HttpFoundation\Session\Session; ?>
 
     <!-- Start Blog 
     ============================================= -->
-    <div class="blog-area grid-style default-padding bottom-less">
+    <div dir="rtl" class="blog-area grid-style default-padding bottom-less">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">

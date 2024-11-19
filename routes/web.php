@@ -6,6 +6,7 @@ use Symfony\Component\HttpFoundation\Session\Session;
 use Illuminate\Http\Request;
 
 use App\Http\Controllers\SettingsController;
+use App\Http\Controllers\ThemesSettingsController;
 use App\Http\Controllers\Login;
 use App\Http\Controllers\GeneralMod;
 /*
@@ -88,15 +89,23 @@ Route::post('admin/images/insert', [SettingsController::class, 'imagesInsert']);
 
 // .... THEME PAGES............
 
-Route::get('/', [SettingsController::class, 'showHome'])->name('home');
+Route::get('/', [ThemesSettingsController::class, 'showHome'])->name('home');
 
-Route::get('theme/about-us', [SettingsController::class, 'showAboutUs'])->name('aboutUs');
+Route::get('theme/about-us', [ThemesSettingsController::class, 'showAboutUs'])->name('aboutUs');
 
-Route::get('theme/contact', [SettingsController::class, 'showContact'])->name('contact');
+Route::get('theme/contact', [ThemesSettingsController::class, 'showContact'])->name('contact');
 
-Route::post('/image/general/upload', [SettingsController::class, 'generalImageUpload']);
+Route::get('theme/faq', [ThemesSettingsController::class, 'showFaq'])->name('faq');
+
+Route::get('theme/pricing', [ThemesSettingsController::class, 'showPricing'])->name('pricing');
+
+Route::post('/image/general/upload', [ThemesSettingsController::class, 'generalImageUpload']);
 
 
 //............ RTL THEME PAGES...................
 
-Route::get('themertl/home', [SettingsController::class, 'showHome'])->name('home');
+Route::get('themertl/home', [ThemesSettingsController::class, 'showRTLHome'])->name('home');
+
+Route::get('themertl/about-us', [ThemesSettingsController::class, 'showRTLAboutUs'])->name('aboutUs');
+
+Route::get('themertl/contact', [ThemesSettingsController::class, 'showRTLContact'])->name('contact');
