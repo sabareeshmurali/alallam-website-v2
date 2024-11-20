@@ -67,7 +67,7 @@
                                         <td>{-{ xx.content_page }-}</td>
                                         <td>{-{ xx.content_key }-}</td>
                                         <td ng-bind-html="xx.content_english"></td>
-                                        <td>{-{ xx.content_arabic }-}</td>
+                                        <td ng-bind-html="xx.content_arabic"></td>
                                         <td>
                                             <div class="btn-group">
                                                 <button class="btn btn-success btn-sm btn-clean" ng-click="edit(xx)">

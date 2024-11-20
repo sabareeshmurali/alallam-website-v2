@@ -150,7 +150,7 @@ use Symfony\Component\HttpFoundation\Session\Session; ?>
                 <div class="col-lg-6 about-style-two">
                     <div class="thumb">
                         <img src=" {{ asset($images['800x800']->img_path ?? '') }} " alt="Thumb">
-                        <img src=" {{ asset($images['800x800']->img_path ?? '') }} " alt="Thumb">
+                        <img src=" {{ asset($images['800']->img_path ?? '') }} " alt="Thumb">
                         <div class="fun-fact">
                             <div class="counter">
                                 <div class="timer" data-to="50" data-speed="5000">50</div>
@@ -186,7 +186,7 @@ use Symfony\Component\HttpFoundation\Session\Session; ?>
                     <div class="col-lg-4 col-md-6 text-center team-style-one">
                         <div class="item">
                             <div class="thumb">
-                                <img src=" {{ asset($images['800x900']->img_path ?? '') }} " alt="Thumb">
+                                <img src=" {{ asset($images['thumb1']->img_path ?? '') }} " alt="Thumb">
                                 <div class="social">
                                     <input type="checkbox" id="toggle" class="share-toggle" hidden>
                                     <label for="toggle" class="share-button">
@@ -216,7 +216,7 @@ use Symfony\Component\HttpFoundation\Session\Session; ?>
                     <div class="col-lg-4 col-md-6 text-center team-style-one">
                         <div class="item">
                             <div class="thumb">
-                                <img src=" {{ asset($images['800x900']->img_path ?? '') }} " alt="Thumb">
+                                <img src=" {{ asset($images['thumb2']->img_path ?? '') }} " alt="Thumb">
                                 <div class="social">
                                     <input type="checkbox" id="toggle2" class="share-toggle" hidden>
                                     <label for="toggle2" class="share-button">
@@ -246,7 +246,7 @@ use Symfony\Component\HttpFoundation\Session\Session; ?>
                     <div class="col-lg-4 col-md-6 text-center team-style-one">
                         <div class="item">
                             <div class="thumb">
-                                <img src=" {{ asset($images['800x900']->img_path ?? '') }} " alt="Thumb">
+                                <img src=" {{ asset($images['thumb3']->img_path ?? '') }} " alt="Thumb">
                                 <div class="social">
                                     <input type="checkbox" id="toggle3" class="share-toggle" hidden>
                                     <label for="toggle3" class="share-button">
@@ -445,7 +445,7 @@ use Symfony\Component\HttpFoundation\Session\Session; ?>
                         <!-- Single Item -->
                         <div class="pf-item">
                             <div class="project-style-two"> 
-                                <img src=" {{ asset($images['600x1100']->img_path ?? '') }} " alt="Thumb">
+                                <img src=" {{ asset($images['clean1']->img_path ?? '') }} " alt="Thumb">
                                 <div class="info">
                                     <span>House, Office</span>
                                     <h4><a href="#">Door Cleaning</a></h4>
@@ -457,7 +457,7 @@ use Symfony\Component\HttpFoundation\Session\Session; ?>
                         <!-- Single Item -->
                         <div class="pf-item">
                             <div class="project-style-two">
-                                <img src=" {{ asset($images['800x800']->img_path ?? '') }} " alt="Thumb">
+                                <img src=" {{ asset($images['clean2']->img_path ?? '') }} " alt="Thumb">
                                 <div class="info">
                                     <span>Apartment</span>
                                     <h4><a href="#">Garden Cleaning</a></h4>
@@ -469,7 +469,7 @@ use Symfony\Component\HttpFoundation\Session\Session; ?>
                         <!-- Single Item -->
                         <div class="pf-item">
                             <div class="project-style-two">
-                                <img src=" {{ asset($images['800x600']->img_path ?? '') }} " alt="Thumb">
+                                <img src=" {{ asset($images['clean3']->img_path ?? '') }} " alt="Thumb">
                                 <div class="info">
                                     <span>Residential, Office</span>
                                     <h4><a href="#">Bedroom Cleaning</a></h4>
@@ -481,7 +481,7 @@ use Symfony\Component\HttpFoundation\Session\Session; ?>
                         <!-- Single Item -->
                         <div class="pf-item">
                             <div class="project-style-two">
-                                <img src=" {{ asset($images['800x800']->img_path ?? '') }} " alt="Thumb">
+                                <img src=" {{ asset($images['clean4']->img_path ?? '') }} " alt="Thumb">
                                 <div class="info">
                                     <span>Home, Apartment</span>
                                     <h4><a href="#">House Cleaning</a></h4>
@@ -493,7 +493,7 @@ use Symfony\Component\HttpFoundation\Session\Session; ?>
                         <!-- Single Item -->
                         <div class="pf-item">
                             <div class="project-style-two">
-                                <img src=" {{ asset($images['800x600']->img_path ?? '') }} " alt="Thumb">
+                                <img src=" {{ asset($images['clean5']->img_path ?? '') }} " alt="Thumb">
                                 <div class="info">
                                     <span>Office, House</span>
                                     <h4><a href="#">Furniture Cleaning</a></h4>
@@ -600,7 +600,7 @@ use Symfony\Component\HttpFoundation\Session\Session; ?>
                     <div class="single-item col-lg-4 col-md-6">
                         <div class="item">
                             <div class="thumb">
-                                <img src=" {{ asset($images['800x600']->img_path ?? '') }} " alt="Thumb">
+                                <img src=" {{ asset($images['blog1']->img_path ?? '') }} " alt="Thumb">
                                 <div class="date">January 25, 2022</div>
                             </div>
                             <div class="info">
@@ -629,7 +629,7 @@ use Symfony\Component\HttpFoundation\Session\Session; ?>
                     <div class="single-item col-lg-4 col-md-6">
                         <div class="item">
                             <div class="thumb">
-                                <img src=" {{ asset($images['800x600']->img_path ?? '') }} " alt="Thumb">
+                                <img src=" {{ asset($images['blog2']->img_path ?? '') }} " alt="Thumb">
                                 <div class="date">April 18, 2022</div>
                             </div>
                             <div class="info">
@@ -658,7 +658,7 @@ use Symfony\Component\HttpFoundation\Session\Session; ?>
                     <div class="single-item col-lg-4 col-md-6">
                         <div class="item">
                             <div class="thumb">
-                                <img src=" {{ asset($images['800x600']->img_path ?? '') }} " alt="Thumb">
+                                <img src=" {{ asset($images['blog3']->img_path ?? '') }} " alt="Thumb">
                                 <div class="date">Auguest 14, 2022</div>
                             </div>
                             <div class="info">

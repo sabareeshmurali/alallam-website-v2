@@ -40,7 +40,7 @@ use Symfony\Component\HttpFoundation\Session\Session; ?>
                     </div>
                 </div>
                 <div class="col-lg-6 about-style-three">
-                    {!! $contents['about']->content_english ?? '' !!}
+                    {!! $contents['about']->content_arabic ?? '' !!}
                     <a class="btn btn-theme primary effect btn-md" href="#">Contact Us</a>
                 </div>
             </div>
@@ -158,7 +158,7 @@ use Symfony\Component\HttpFoundation\Session\Session; ?>
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
-                {!! $contents['team']->content_english ?? '' !!}
+                {!! $contents['team']->content_arabic  ?? '' !!}
                 </div>
             </div>
         </div>

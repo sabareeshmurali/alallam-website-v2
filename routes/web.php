@@ -99,7 +99,21 @@ Route::get('theme/faq', [ThemesSettingsController::class, 'showFaq'])->name('faq
 
 Route::get('theme/pricing', [ThemesSettingsController::class, 'showPricing'])->name('pricing');
 
-Route::post('/image/general/upload', [ThemesSettingsController::class, 'generalImageUpload']);
+Route::get('theme/projects', [ThemesSettingsController::class, 'showProjects'])->name('projects');
+
+Route::get('theme/project-details', [ThemesSettingsController::class, 'showProjectDetails'])->name('projectdetails');
+
+Route::get('theme/services', [ThemesSettingsController::class, 'showServices'])->name('services');
+
+Route::get('theme/team', [ThemesSettingsController::class, 'showTeam'])->name('team');
+
+Route::get('theme/team-single', [ThemesSettingsController::class, 'showTeamSingle'])->name('teamsingle');
+
+Route::get('theme/blog-single', [ThemesSettingsController::class, 'showBlogSingle'])->name('blogsingle');
+
+Route::get('theme/blog-single-with-sidebar', [ThemesSettingsController::class, 'showBlogSingleSideBar'])->name('blogsidebar');
+
+Route::post('/image/general/upload', [SettingsController::class, 'generalImageUpload']);
 
 
 //............ RTL THEME PAGES...................
@@ -113,3 +127,17 @@ Route::get('themertl/contact', [ThemesSettingsController::class, 'showRTLContact
 Route::get('themertl/faq', [ThemesSettingsController::class, 'showRTLFaq'])->name('faq');
 
 Route::get('themertl/pricing', [ThemesSettingsController::class, 'showRTLPricing'])->name('pricing');
+
+Route::get('themertl/projects', [ThemesSettingsController::class, 'showRTLProjects'])->name('projects');
+
+Route::get('themertl/project-details', [ThemesSettingsController::class, 'showRTLProjectDetails'])->name('projectdetails');
+
+Route::get('themertl/services', [ThemesSettingsController::class, 'showRTLServices'])->name('services');
+
+Route::get('themertl/team', [ThemesSettingsController::class, 'showRTLTeam'])->name('team');
+
+Route::get('themertl/team-single', [ThemesSettingsController::class, 'showRTLTeamSingle'])->name('teamsingle');
+
+Route::get('themertl/blog-single-with-sidebar', [ThemesSettingsController::class, 'showRTLBlogSingleSideBar'])->name('blogsidebar');
+
+Route::get('themertl/blog-single', [ThemesSettingsController::class, 'showRTLBlogSingle'])->name('blogsingle');

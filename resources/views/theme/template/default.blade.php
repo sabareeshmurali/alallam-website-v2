@@ -187,10 +187,7 @@ $session = new Session();
                                 <div class="icon">
                                     <img src=" {{ asset($images['phcall']->img_path ?? '') }} " alt="Phone">
                                 </div>
-                                <div class="info">
-                                    <span>Have any question?</span>
-                                    <h5>(012) 66795453</h5>
-                                </div>
+                                {!! $contents['any']->content_english ?? '' !!}
                             </div>
                         </div> 
                     </div>       

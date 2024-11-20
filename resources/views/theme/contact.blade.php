@@ -29,7 +29,7 @@ use Symfony\Component\HttpFoundation\Session\Session; ?>
                     <div class="col-lg-4 info">
                         <div class="content text-center text-light">
                             <div class="thumb">
-                                <img src=" {{ asset($images['4']->img_path ?? '') }} "alt="Thumb">
+                                <img src=" {{ asset($images['4']->img_path ?? '') }} " alt="Thumb">
                             </div>
                             {!! $contents['address']->content_english ?? '' !!}
                         </div>

@@ -5,6 +5,7 @@ use Symfony\Component\HttpFoundation\Session\Session;
 $session = new Session();
 ?>
 <!DOCTYPE html>
+
 <html lang="ar" dir="rtl">
 
 <head>
@@ -52,7 +53,7 @@ $session = new Session();
     <div class="top-bar-area inc-pad bg-dark text-light">
         <div class="container-fill">
             <div class="row align-center">
-            {!! $contents['time']->content_english ?? '' !!}
+            {!! $contents['time']->content_arabic ?? '' !!}
                 <div class="col-lg-4 text-right item-flex">
                     <div class="social">
                         <ul>
@@ -188,10 +189,7 @@ $session = new Session();
                                 <div class="icon">
                                     <img src=" {{ asset($images['phcall']->img_path ?? '') }} " alt="Phone">
                                 </div>
-                                <div class="info">
-                                    <span>Have any question?</span>
-                                    <h5>(012) 66795453</h5>
-                                </div>
+                                {!! $contents['any']->content_arabic ?? '' !!}
                             </div>
                         </div> 
                     </div>       
@@ -224,7 +222,7 @@ $session = new Session();
                     <div class="col-lg-4 col-md-6 item">
                         <div class="f-item about">
                             <img src=" {{ asset($images['logo-light']->img_path ?? '') }} " alt="Logo">
-                            {!! $contents['content']->content_english ?? '' !!}
+                            {!! $contents['content']->content_arabic ?? '' !!}
                             <form action="#">
                                 <input type="email" placeholder="Your Email" class="form-control" name="email">
                                 <button type="submit"> <i class="arrow_right"></i></button>  
@@ -282,7 +280,7 @@ $session = new Session();
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 item">
-                    {!! $contents['contact']->content_english ?? '' !!}
+                    {!! $contents['contact']->content_arabic ?? '' !!}
                     </div>
                 </div>
             </div>

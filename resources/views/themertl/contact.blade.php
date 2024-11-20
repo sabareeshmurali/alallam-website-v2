@@ -31,12 +31,12 @@ use Symfony\Component\HttpFoundation\Session\Session; ?>
                             <div class="thumb">
                                 <img src=" {{ asset($images['4']->img_path ?? '') }} "alt="Thumb">
                             </div>
-                            {!! $contents['address']->content_english ?? '' !!}
+                            {!! $contents['address']->content_arabic  ?? '' !!}
                         </div>
                     </div>
                     <div class="col-lg-8 contact-form-box">
                         <div class="form-box">
-                        {!! $contents['talk']->content_english ?? '' !!}
+                        {!! $contents['talk']->content_arabic  ?? '' !!}
                             <form action="assets/mail/contact.php" method="POST" class="contact-form">
                                 <div class="row">
                                     <div class="col-lg-12">

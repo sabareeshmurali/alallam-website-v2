@@ -78,17 +78,15 @@ myapp.controller("MyCntrlr", function ($http, $scope, Upload, $timeout) {
         'mainData': $scope.mainData,
     }).then(function (response) {
         if (response.data.statuscode == 200) {
-          console.log(response.data);
+   
           $scope.show_data();
             successalert(response.data.message);
-            console.log(response.data.message);
+       
             
            
           } else {
-              //failalert(response.data.message);
-              // console.log(response.data);
-              // console.log(response.data.message);
-              // console.log("insert inside 3");
+              failalert(response.data.message);
+       
           }
           $scope.amn = 0;
       });
