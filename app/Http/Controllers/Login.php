@@ -50,4 +50,15 @@ class Login extends Controller
         echo json_encode($response);
     }
 
+    public function load_general()
+    {
+        $model  = new general_mod();
+        $info = json_decode(file_get_contents('php://input'));
+        $tablename = isset($info->tablename) ? $info->tablename : '';
+        $where = isset($info->where) ? json_decode(json_encode($info->where), true) : array();
+        $where_raw = isset($info->where_raw) ? $info->where_raw : null;
+        $result = $model->result_general($tablename, $where, $where_raw);
+        echo json_encode($result);
+    }
+
 }

@@ -83,4 +83,25 @@ $scope.show_data = function () {
     });
   };
 
+  
+  $scope.loadForms = function () {
+    $http.post(Base_url + '/listing/general', {
+      'tablename': 'form_master'
+    }).then(function (response) {
+      $scope.data_forms = response.data;
+    });
+  };
+
+  $scope.onFormSelectChange = function (form_name) {
+    
+    $http.post(Base_url + '/admin/contents/select', {  
+      'form_name': form_name ,
+    }).then(function (response) {  
+      $scope.dataitems = response.data;
+      $timeout(function () {
+        angular.element('#mainTable').doubleScroll();
+      }, 500);
+    });
+  };
+
 });

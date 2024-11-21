@@ -127,7 +127,7 @@ use Symfony\Component\HttpFoundation\Session\Session; ?>
                     <div class="style-three-item item">
                         <div class="shape" style="background-image: url('{{ asset($images['21']->img_path ?? '') }}');"></div>
                         <div class="thumb">
-                            <img src=" {{ asset($images['dayclean']->img_path ?? '') }} " alt="Icon">
+                            <img src=" {{ asset($images['dryclean']->img_path ?? '') }} " alt="Icon">
                         </div>
                         <h4><a href="#">Laundry and Dry Cleaning</a></h4>
                         <p>

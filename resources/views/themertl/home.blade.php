@@ -149,7 +149,7 @@ use Symfony\Component\HttpFoundation\Session\Session; ?>
             <div class="row align-center">
                 <div class="col-lg-6 about-style-two">
                     <div class="thumb">
-                        <img src=" {{ asset($images['800x800']->img_path ?? '') }} " alt="Thumb">
+                        <img src=" {{ asset($images['img']->img_path ?? '') }} " alt="Thumb">
                         <img src=" {{ asset($images['800']->img_path ?? '') }} " alt="Thumb">
                         <div class="fun-fact">
                             <div class="counter">

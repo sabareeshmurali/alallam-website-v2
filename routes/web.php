@@ -71,6 +71,7 @@ Route::get('/contents', function () {
 
 Route::post('admin/contents/show', [SettingsController::class, 'contentsShow']);
 Route::post('admin/contents/insert', [SettingsController::class, 'contentsInsert']);
+Route::post('admin/contents/select', [SettingsController::class, 'contentsSelectShow']);
 
 // Edit Images......................
 
@@ -141,3 +142,7 @@ Route::get('themertl/team-single', [ThemesSettingsController::class, 'showRTLTea
 Route::get('themertl/blog-single-with-sidebar', [ThemesSettingsController::class, 'showRTLBlogSingleSideBar'])->name('blogsidebar');
 
 Route::get('themertl/blog-single', [ThemesSettingsController::class, 'showRTLBlogSingle'])->name('blogsingle');
+
+
+
+Route::post('/listing/general', [Login::class, 'load_general']);

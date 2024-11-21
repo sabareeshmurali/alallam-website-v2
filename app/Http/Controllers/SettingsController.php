@@ -21,6 +21,22 @@ class SettingsController extends Controller
       echo json_encode($result);
   }
 
+  public function contentsSelectShow()
+  {
+      $input = json_decode(file_get_contents('php://input'));
+      $form_name = $input->form_name; 
+      $model = new general_mod();
+  
+      if ($form_name) {
+         
+          $result = $model->result_general('in_contents', ['content_page' => $form_name]);
+      } else {
+          $result = ['error' => 'form_name is required'];
+      }
+  
+      echo json_encode($result);
+  }
+
   public function contentsInsert()
   {
       $model = new general_mod();

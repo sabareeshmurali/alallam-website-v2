@@ -12,12 +12,20 @@
             <h1 class="page-header">{-{ heading }-}</h1>
         </div>
         <div class="col-9">
-            <div class="row">
+            <!-- <div class="row">
                 <div class="col-md-8">
                     <input type="text" class="form-control" placeholder="Search Here" ng-model="keyword">
-                </div>
-                
+                </div>  
+            </div> -->
+            <div class="col-md-8" ng-init="loadForms()">
+                <select class="form-select right-part" id="formSelect" ng-model="mainData.form_name"  ng-change="onFormSelectChange(mainData.form_name)">
+                            <option ng-repeat="form in data_forms" value="+{-{ form.form_name }-}">{-{ form.form_name}-}</option>
+                </select>
             </div>
+            <!-- <div class="col-md-4">
+                    <button class="btn btn-outline-theme float-end" ng-click="openInsert()"><i class="fas fa-plus"></i> {-{ heading }-} </button>
+            </div> -->
+
         </div>
     </div>
     <div class="clear-fix"></div>
